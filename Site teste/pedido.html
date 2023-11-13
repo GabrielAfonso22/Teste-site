@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Fazer Pedido - Pizzaria Delícia</title>
+</head>
+<body>
+    <header>
+        <h1>Pizzaria Delícia</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="pedido.html">Fazer Pedido</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Fazer Pedido</h2>
+        <form id="pedido-form">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <label for="endereco">Endereço de entrega:</label>
+            <input type="text" id="endereco" name="endereco" required>
+
+            <h3>Selecione suas pizzas:</h3>
+            <div class="pizza" onclick="adicionarAoPedido('Margherita', 10.99)">
+                <img src="pizza_margherita.jpg" alt="Margherita">
+                <h4>Margherita</h4>
+                <p>Tomate, mussarela, manjericão</p>
+                <p class="preco">R$ 10.99</p>
+                <input type="checkbox" name="pizzas[]" value="Margherita">
+            </div>
+            <!-- Adicione mais pizzas conforme necessário -->
+
+            <button type="button" onclick="finalizarPedido()">Finalizar Pedido</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Pizzaria Delícia</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

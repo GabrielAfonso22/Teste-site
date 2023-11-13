@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Pizzaria</title>
+</head>
+<body>
+    <header>
+        <header>
+            <h1>Pizzaria Delícia</h1>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="menu.html">Menu</a>
+                <a href="pedido.html">Fazer Pedido</a>
+            </nav>
+        </header>
+    </header>
+
+    <section id="menu">
+        <h2>Menu de Pizzas</h2>
+        <div class="pizza" onclick="adicionarAoCarrinho('Margherita', 10.99)">
+            <img src="pizza_margherita.jpg" alt="Margherita">
+            <h3>Margherita</h3>
+            <p>Tomate, mussarela, manjericão</p>
+            <p class="preco">R$ 10.99</p>
+        </div>
+        <!-- Adicione mais pizzas conforme necessário -->
+    </section>
+
+    <section id="carrinho">
+        <h2>Carrinho</h2>
+        <ul id="lista-carrinho"></ul>
+        <p id="total">Total: R$ 0.00</p>
+        <button onclick="limparCarrinho()">Limpar Carrinho</button>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

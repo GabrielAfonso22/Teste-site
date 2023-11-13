@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Menu - Pizzaria Delícia</title>
+</head>
+<body>
+    <header>
+        <h1>Pizzaria Delícia</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="pedido.html">Fazer Pedido</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Menu de Pizzas</h2>
+        <div class="pizza" onclick="adicionarAoCarrinho('Margherita', 10.99)">
+            <img src="pizza_margherita.jpg" alt="Margherita">
+            <h3>Margherita</h3>
+            <p>Tomate, mussarela, manjericão</p>
+            <p class="preco">R$ 10.99</p>
+        </div>
+        <!-- Adicione mais pizzas conforme necessário -->
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Pizzaria Delícia</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
